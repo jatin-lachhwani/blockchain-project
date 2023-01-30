@@ -45,16 +45,3 @@ def create_network(n):
             lst = [[] for i in range(n)]
             var = [0]*n
     return lst
-
-############# For testing ##############
-# for i in range(100):
-#     lst=create_network(randint(10,30))
-#     for x in lst:
-#         if len(x)>8:
-#             print(lst,"len>8")
-#         if len(x)==8:
-#             print(lst,"len=8")
-#         if len(x)<4:
-#             print(lst,"len<4")
-#         if len(x)==4:
-#             print(lst,"len=4")
