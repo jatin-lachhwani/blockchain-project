@@ -38,8 +38,6 @@ def create_network(n):
                     var[x]+=1
                     lst[y].append(x)
                     var[y]+=1
-            print("loop1")
-        print("loop2")
         connected=check_connected(lst,n)
         if connected==False:
             lst = [[] for i in range(n)]
