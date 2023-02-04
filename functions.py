@@ -16,7 +16,7 @@ def get_list_peers(n,set_slow,set_lowcpu,t_tx,NUM_TXN):
     for i in range(n):
         link_speed = LOW if i in set_slow else HIGH
         compute = LOW if i in set_lowcpu else HIGH
-        peer = Peer(i,link_speed,compute,t_tx,NUM_TXN)
+        peer = Peer(i,link_speed,compute,t_tx,NUM_TXN,n)
         peer_lst.append(peer)
     return peer_lst
 
